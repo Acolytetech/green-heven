@@ -6,4 +6,15 @@
 }
 html{
   font-size: 62.5%;
-  font-family: "Inter", sans-serif;}
+
+  /* font-family: "Inter", sans-serif; */
+  font-family: "orig_nelphim_regular" , "Helvetica Neue";
+
+}
+
+  @media (max-width: 768px) {
+    html{
+    font-size: 42.5%;
+  font-family: "Inter", sans-serif;
+    }
+  }

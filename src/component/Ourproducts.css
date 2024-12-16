@@ -1,0 +1,165 @@
+.ourproducts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem 0rem;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    color: black;
+}
+
+.productsContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    /* justify-content: space-around; */
+    margin-top: 5rem;
+
+}
+
+.sectionHeading {
+    font-size: 2.8rem;
+    margin-bottom: 1.6rem;
+}
+.mainHeading {
+    font-size: 4.8rem;
+    margin-bottom: 5rem;
+}
+
+.product-details {
+
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.productimg {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    margin: 0px auto;
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+
+.productImage {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+
+.productName {
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: 300;
+}
+
+.btn {
+    width: 170px;
+    margin: 0.45rem auto;
+    padding: 0.5rem 0rem;
+    background-color: transparent;
+    border: 0.1rem solid#5863479a;
+    color: #586347;
+    cursor: pointer;
+}
+
+.btn2 {
+    width: 170px;
+    margin: 0.45rem auto;
+    padding: 0.7rem 0rem;
+    background-color: #586347;
+    color: white;
+    border: 0;
+}
+
+.Explorebtn,
+.Explorebtn span {
+    font-size: 2rem;
+    font-weight: 100;
+    width: fit-content !important;
+    padding: 1rem 2.5rem !important;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 4rem;
+    border: black solid 0.3rem;
+    color: #000;
+}
+
+.Explorebtn .span {
+    font-size: 4rem;
+    font-weight: normal!important;
+    width: fit-content !important;
+    align-items: center;
+    text-align: center;
+    padding-left: 2rem;
+    scale: 1.7;
+}
+
+@media (max-width: 767px) {
+    .ourproducts {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .productsContainer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .product-details {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 5rem;
+    }
+
+    .productimg {
+        width: 50%;
+        height: 120px;
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+
+    .productImage {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        object-position: center;
+    }
+
+    .btn {
+        width: 65%;
+        margin: 0.45rem auto;
+        padding: 0.5rem 0rem;
+        background-color: transparent;
+        border: 0.1rem solid#586347;
+        color: #586347;
+        cursor: pointer;
+    }
+
+    .btn2 {
+        width: 65%;
+        margin: 0.45rem auto;
+        padding: 0.7rem 0rem;
+        background-color: #586347;
+        color: white;
+        border: 0;
+    }
+}
