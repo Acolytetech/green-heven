@@ -75,7 +75,7 @@
   .footer-copyright {
     align-items: center;
     text-align: center;
-    margin-top: 3rem;
+    margin: 5rem 0 3rem 0;
     font-size: 2rem;
     opacity: 0.8;
     /* border-top: 0.1rem solid #555; */
@@ -84,7 +84,7 @@
     /* background:linear-gradient(90deg,rgb(128, 202, 128), rgb(14, 189, 177), rgb(17, 205, 111)); */
   }
   .footer-contact{
-    width: 45rem;
+    width: 50rem;
   }
   .footer-contact p {
     text-decoration: none;
@@ -98,27 +98,16 @@
   }
   
     
-  .footer-social a {
-  /* margin-right: 15px; */
-  text-decoration: none;
-    color: white;
-    transition: color 0.3s ease;
-    font-size: 3rem;
-    line-height: 3rem;
-    margin: 0rem 1rem;
-    width: 2rem;
-    height: 2rem;
-   
-  }
-  .footer-social a:nth-last-child(2) {
-    /* scale: 1.2!important; */
-    font-size: 3.7rem;
-  }
-  .footer-social a:nth-last-child(1) {
-    /* scale: 1.2!important; */
+  .footer-social  a {
+    margin: 0 1rem;
     font-size: 3.5rem;
-  }
+    /* background: #f7f5f5; */
+    /* color: white; */
  
+    
+    /* border-radius: 50%; */
+  }
+
   
   .footer-social a:hover {
   color: #4380e2;

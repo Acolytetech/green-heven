@@ -46,9 +46,12 @@ const Whychooseus = () => {
               <h3 className="subheading">{item.subheading}</h3>
 
               {/* Render the rich text description */}
+              <p  className="description-subheading" >
               {item.description && (
-                <PortableText  value={item.description} />
+                <PortableText value={item.description} />
               )}
+              </p>
+          
             </div>
           ))}
         </div>

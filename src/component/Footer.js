@@ -3,11 +3,13 @@ import './Footer.css';
 // import logo from '../../image/logo only imge.png'
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 import { SiFacebook } from "react-icons/si";
-import { PiInstagramLogo } from "react-icons/pi";
+import { FaInstagram } from "react-icons/fa";
 import { TiSocialTwitterCircular } from "react-icons/ti";
 import createClient from "../Sanity";
 import { FaWhatsapp } from "react-icons/fa";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+
 
 const Footer = () => {
     const [footerData, setFooterData] = useState(null);
@@ -112,17 +114,18 @@ const Footer = () => {
                                     Icon = TiSocialTwitterCircular;
                                     break;
                                 case 'linkedin':
-                                    Icon = TiSocialLinkedinCircular;
+                                    Icon = FaLinkedinIn;
                                     break;
                                 case 'instagram':
-                                    Icon = PiInstagramLogo;
+                                    Icon = FaInstagram;
                                     break;
                                 default:
                                     Icon = null;
                             }
                             return (
+                                
                                 <a key={index} href={social.url} target="_blank" rel="noopener noreferrer">
-                                    {Icon && <Icon />}
+                                    {Icon && <Icon className="socialicon" />}
                                 </a>
                             );
                         })}
@@ -222,7 +225,7 @@ const Footer = () => {
                                             Icon = TiSocialLinkedinCircular;
                                             break;
                                         case "instagram":
-                                            Icon = PiInstagramLogo;
+                                            Icon = FaInstagram;
                                             break;
                                         default:
                                             Icon = null;
@@ -234,7 +237,10 @@ const Footer = () => {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
-                                            {Icon && <Icon />}
+                                            <span style={{backgroundColor:'black'}}>
+
+                                            {Icon}
+                                            </span>
                                         </a>
                                     );
                                 })}

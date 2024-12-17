@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('https://cdn.example.com/fonts/mycustomfont.woff2') format('woff2'),
+       url('https://cdn.example.com/fonts/mycustomfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 *{
   margin: 0px;
   padding: 0px;
@@ -8,7 +16,9 @@ html{
   font-size: 62.5%;
 
   /* font-family: "Inter", sans-serif; */
-  font-family: "orig_nelphim_regular" , "Helvetica Neue";
+  /* font-family: "orig_nelphim_regular" ; */
+  /* font-family: wfont_ae693f_f93450d694504464a6a2327cc9dc99a6, wf_f93450d694504464a6a2327cc, orig_nelphim_regular; */
+  font-family: 'MyCustomFont', sans-serif;
 
 }
 
@@ -17,4 +27,16 @@ html{
     font-size: 42.5%;
   font-family: "Inter", sans-serif;
     }
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after  {
+    color: #ccc !important;
+    }
+    .swiper-pagination-bullet{
+      background-color: #fff;
+    }
+    .swiper-pagination-bullet-active {
+      opacity: var(--swiper-pagination-bullet-opacity, 1);
+      background: white !important;;
   }

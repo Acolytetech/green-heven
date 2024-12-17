@@ -12,6 +12,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { Navigation, Pagination } from "swiper/modules";
 
 export default function Testimonial({ navRef }) {
     const [testimonialData, setTestimonialData] = useState([]);
@@ -64,13 +65,14 @@ export default function Testimonial({ navRef }) {
   
     
             <Swiper
-            className={testcss.banner}
+            className={` mySwiper ${testcss.banner}` }
             loop={true}
-            navigation={false}
-            pagination={true}
-            scrollbar={{ draggable: true }}
-            slidesPerView={1}
-            // spaceBetween={0}
+            spaceBetween={0}
+            navigation={true}
+            pagination={{
+                clickable: true,
+            }}
+            modules={[ Navigation, Pagination ]}
             
 
                 

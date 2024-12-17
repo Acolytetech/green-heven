@@ -272,7 +272,7 @@ background: transparent;
   margin-top: 0.7rem;
 }
 
-@media (max-width: 900px) and (min-width: 600px) {
+@media (max-width: 1050px) and (min-width: 600px) {
   /* Adjust navbar padding for medium screens */
   .navbar {
     padding: 2rem;
