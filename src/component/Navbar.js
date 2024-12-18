@@ -31,12 +31,15 @@ const Navbar = ({ navRef }) => {
           menuItems[] {
             label,
             link,
+            path,
             dropdownItems[] {
               label,
               link,
+              path,
               subdropdownItems[] {
                 label,
-                link
+                link,
+                path
               }
             }
           },
@@ -67,7 +70,7 @@ const Navbar = ({ navRef }) => {
         {items.map((item, index) => (
           <li key={index} className="dropdown-item" role="none">
             <Link
-              to={item.link || "#"}
+              to={item.link ||item.path || "#"}
               className="dropdown-link"
               role="menuitem"
               tabIndex={0}
@@ -80,7 +83,7 @@ const Navbar = ({ navRef }) => {
                 {item.subdropdownItems.map((subItem, subIndex) => (
                   <li key={subIndex} className="sub-dropdown-item" role="none">
                     <Link
-                      to={subItem.link || "#"}
+                      to={subItem.link||item.path || "#"}
                       className="sub-dropdown-link"
                       role="menuitem"
                       tabIndex={0}
@@ -129,7 +132,7 @@ const Navbar = ({ navRef }) => {
       <ul className={`navlinks ${isMenuOpen ? "open" : ""}`}>
         {navbarData.menuItems.map((item, index) => (
           <li key={index} className="nav-item">
-            <Link to={item.link || "#"} className="nav-link">
+            <Link to={item.link||item.path || "#"} className="nav-link">
               {item.label}
             </Link>
             {/* Render dropdown with unique class */}

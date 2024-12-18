@@ -1,0 +1,66 @@
+.aboutSection {
+    /* padding: 4rem; */
+    background-color: #F5EEDB;
+  }
+  
+  .container {
+    display: flex;
+        gap: 2rem;
+        align-items: center;
+        flex-wrap: wrap; /* Makes it responsive */
+  }
+  
+  .imageWrapper {
+    /* flex: 1; */
+  }
+  
+  .image {
+    width: 500px;
+    height: 500px;
+    /* border-radius: 8px; */
+    object-fit: cover;
+  }
+  
+  .content {
+    flex: 1 1;
+    padding: 2rem;
+  }
+  
+  .content h2 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  
+  .content p {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+  }
+  
+  .mission {
+    margin-top: 1rem;
+  }
+  
+  .mission h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+  
+  
+  .mission ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .mission li {
+    font-size: 1.3rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+  
+  
+  .mission strong {
+    font-weight: bold;
+  }
+  
