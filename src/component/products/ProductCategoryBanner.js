@@ -43,12 +43,11 @@ const ProductCategoryBanner = () => {
       style={{
         
         backgroundImage: `url(${getBannerData?.backgroundimage?.asset.url})`,
-        backgroundColor: 'rgba(0,0,0,0.6)',
+        backgroundColor: 'rgba(0,0,0,0.5)',
         backgroundSize: "cover",
         // backgroundPosition: "fill",
         backgroundBlendMode:'darken',
         // color: "white",
-        height: "70vh",
       }}
     >
       <div className={styles.container}>

@@ -5,6 +5,7 @@
 
 .productHeaderSection h2{
     font-size: 5rem;
+    font-weight: 100;
 }
 
 .productHeaderSection p{
@@ -13,6 +14,8 @@
     text-align: center; /* Optional: Center the text */
     margin: 0 auto; /* Center horizontally */
     word-wrap: break-word; /* Ensures long words break */
+    font-weight: 100 !important;
+    font-family: var(--font-dreamcottage);
     margin-top: 20px;
 }
 
@@ -42,16 +45,17 @@
 } */
 
 .productImage {
-    width: 18rem;
-    height: 18rem;
+    width: 20rem;
+    height: 20rem;
     object-fit: cover;
     margin-bottom: 12px;
     /* border-radius: 50%; */
 }
 
 .productName {
-    font-size: 14px;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #333;
+    font-family: var(--font-montserrat);
 }
   
