@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Nephilm';
+  src: url('./fontfamily/nelphim-font/Nephilm.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dreamcottage';
+  src: url('./fontfamily/dream-cottage-font-1734413965-0/dreamcottage-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrat';
+  src: url('./fontfamily/Montserrat/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+:root {
+  --font-nephilm: 'Nephilm', sans-serif;
+  --font-dreamcottage: 'dreamcottage', sans-serif;
+  --font-montserrat: 'montserrat', sans-serif;
+}
+
+/* Optional Global Defaults */
+body {
+  font-family: var(--font-nephilm);
+}
+/* p{
+  font-family: var(--font-montserrat);
+
+} */

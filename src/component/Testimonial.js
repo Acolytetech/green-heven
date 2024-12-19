@@ -95,7 +95,7 @@ export default function Testimonial({ navRef }) {
 
                                 {/* Headline */}
                                 <h2 className={testcss.bannerHeading}>
-                                    <PortableText value={item.headline || []} />
+                                    <PortableText className={testcss.bannerHeading} value={item.headline || []} />
                                 </h2>
 
                                 {/* Subheadline with Quote Icon */}

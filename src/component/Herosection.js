@@ -71,10 +71,10 @@ export default function Herosection({ navRef }) {
           <div className={styles.banner} key={item.slug.current}>
             {/* Overlay Content */}
             <div className={styles.container}>
-              <h2 className={styles.bannerHeading}>
-
-            <PortableText  value={item.headline || []} />
-              </h2>
+            {item?.headline.map((item, index) => (
+            <h2 className={styles.bannerHeading} key={index}>{item}</h2>
+          ))}
+             
             {/* <PortableText className={styles.bannerPera} value={item.subheadline || []} /> */}
               {/* <h2 className={styles.bannerHeading}>{item.headline}</h2> */}
               <p className={styles.bannerPera} >

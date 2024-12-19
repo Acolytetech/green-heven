@@ -67,6 +67,7 @@
     padding: 1.3rem 0;
     /* font-weight: 300; */
     font-weight: 400;
+    font-family: var(--font-montserrat);
 }
 
 .btn {
@@ -77,6 +78,7 @@
     border: 0.1rem solid #000;
     color: #000;
     cursor: pointer;
+    font-weight: 100;
 }
 
 .btn2 {
@@ -85,6 +87,7 @@
     padding: 0.7rem 0rem;
     background-color: #586347;
     color: white;
+    font-family: var(--font-montserrat);
     border: 0;
 }
 

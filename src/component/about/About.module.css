@@ -1,13 +1,10 @@
 /* About.module.css */
 
 .section {
-  /* background-image: url('../img/banner.jpg'); */
-  background-size: cover;
+  background-size: fill;
   background-position: center;
   background-repeat: no-repeat;
-  /* padding: rem 2rem; Adjust padding as needed */
   color: white;
-  /* Adjust text color for better contrast */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,15 +13,13 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 2rem;
-  /* Adjust padding as needed */
+  padding: 1rem 10rem;
 }
 
 .ourPartner {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* padding: 2rem; */
   gap: 2rem;
   border-radius: 8px;
   text-align: center;
@@ -32,19 +27,18 @@
 }
 
 .ourPartner h3 {
-
-  /* align-items; */
   text-align: left;
-  font-size: 4.8rem;
-  font-weight: 700;
-  line-height: 58.09px;
-  margin-bottom: 15px;
+  font-size: 3.8rem;
+  font-weight: 100;
+  /* line-height: 5.8rem; */
 }
 
 .ourPartner p {
   text-align: left;
-  font-size: 2.1rem;
-  font-weight: 200;
+  font-size: 2.5rem;
   line-height: 35.79px;
-  margin: 0;
+  margin: 0.5rem 0;
+  font-family: var(--font-montserrat);
+  font-weight: 100;
+  padding-left: 2rem;
 }

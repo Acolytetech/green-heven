@@ -40,11 +40,12 @@ function Aboutbanner() {
 
   return (
     <section className={styles.section} style={{  color: "white",
-      backgroundImage: `url(${aboutData.backgroundimage.asset.url})`,
+      background: `rgba(0,0,0,0.1) url(${aboutData.backgroundimage.asset.url})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
-      filter: "grayscale(6%)",
-      height: "100vh",}}>
+      backgroundBlendMode:'darken',
+      height:'100vh',
+      }}>
       <div className={styles.container}>
         <div className={styles.ourPartner}>
           <h3>{aboutData.title}</h3>
